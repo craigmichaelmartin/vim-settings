@@ -23,6 +23,8 @@ fi
 git submodule init
 git submodule update
 
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
 cd ~/.vim/bundle && git clone git://github.com/altercation/vim-colors-solarized.git
 mkdir ~/vim/colors && mv ~/.vim/bundle/vim-colors-solarized/colors/solarized.vim ~/.vim/colors/
 
