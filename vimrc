@@ -1,3 +1,4 @@
+execute pathogen#infect()
 set nocompatible            " Use Vim defaults
 filetype off                " required for vundle, can be turned on later
 
@@ -22,6 +23,7 @@ let g:syntastic_python_checkers=['flake8']
 let g:syntastic_python_flake8_args = "--max-line-length=85"
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_check_on_open=1
+let g:syntastic_check_on_wq = 1
 
 au BufReadPost *.conf set syntax=ini
 
@@ -32,7 +34,7 @@ let NERDTreeIgnore = ['\.pyc$']
 
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
-colorscheme solarized   "molotov
+colorscheme solarized
 
 if exists("g:colors_name")
     if g:colors_name != 'solarized'
