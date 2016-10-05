@@ -16,14 +16,20 @@ Bundle 'nvie/vim-flake8'
 Bundle 'flazz/vim-colorschemes'
 Bundle 'jmcantrell/vim-virtualenv'
 Plugin 'pangloss/vim-javascript'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'Quramy/tsuquyomi'
 
 call vundle#end()
 
 let g:syntastic_python_checkers=['flake8']
 let g:syntastic_python_flake8_args = "--max-line-length=85"
 let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_check_on_open=1
+let g:syntastic_typescript_checkers = ['tsuquyomi', 'tslint']
+let g:tsuquyomi_disable_quickfix = 1
+let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 1
+let g:syntastic_aggregate_errors = 1
+
 
 au BufReadPost *.conf set syntax=ini
 
