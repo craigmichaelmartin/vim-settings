@@ -25,6 +25,7 @@ let g:syntastic_python_checkers=['flake8']
 let g:syntastic_python_flake8_args = "--max-line-length=85"
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_typescript_checkers = ['tsuquyomi', 'tslint']
+let g:syntastic_html_checkers = []
 let g:tsuquyomi_disable_quickfix = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 1
@@ -60,6 +61,10 @@ imap <up> <nop>
 imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
+
+" map j and k to down and up, respectively for popup menu
+inoremap <expr> j pumvisible() ? "\<C-N>" : "j"
+inoremap <expr> k pumvisible() ? "\<C-P>" : "k"
 
 
 syntax on
