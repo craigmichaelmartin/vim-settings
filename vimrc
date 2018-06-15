@@ -18,6 +18,7 @@ Bundle 'jmcantrell/vim-virtualenv'
 Plugin 'pangloss/vim-javascript'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'Quramy/tsuquyomi'
+Plugin 'mxw/vim-jsx'
 
 call vundle#end()
 
@@ -30,6 +31,7 @@ let g:tsuquyomi_disable_quickfix = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 1
 let g:syntastic_aggregate_errors = 1
+let g:jsx_ext_required = 1
 
 
 au BufReadPost *.conf set syntax=ini
