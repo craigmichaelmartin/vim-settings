@@ -74,10 +74,10 @@ set autoindent                              " Copy indent from last line when st
 set background=dark                         " Dark background
 set synmaxcol=2048                          " Prevent slow downs from syntax highlighting
 "set cindent
-set shiftwidth=4                            " The number of spaces for indenting
-"set tabstop=4
+set shiftwidth=2                            " The number of spaces for indenting
+"set tabstop=2
 set expandtab                               " Expand tabs to spaces
-set softtabstop=4                           " Tab key results in 2 spaces
+set softtabstop=2                           " Tab key results in 2 spaces
 set shiftround                              " Indent/outdent to nearest tabstops
 set tabpagemax=50                           " Allow way more tabs
 set hidden                                  " When a buffer is brought to foreground, remember undo history and marks
